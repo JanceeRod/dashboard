@@ -3,11 +3,11 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    border: solid none;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
     height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -16,6 +16,7 @@ body {
 
 .header { 
     grid-column: 2 / 3;
+    box-shadow: 6px 6px 6px 2px rgba(194, 194, 194, 0.45);
 }
 
 .top, .account {
@@ -24,10 +25,10 @@ body {
 }
 
 .top {
-    padding: 40px 60px 30px 40px;
+    padding: 30px 50px 30px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Add this line */
+    justify-content: space-between;
 }
 
 .search { 
@@ -56,7 +57,7 @@ input {
 .top .account {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .account span {
@@ -70,28 +71,58 @@ input {
     font-weight: bold;
 }
 
+.bottom {
+    margin: 0px 40px 30px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    margin-right: auto;
+}
+
+.profile-name .greeting {
+    font-weight: bold;
+}
+
+.profile-name .name {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.bottom button {
+    background-color: #fed7aa;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "DM Sans", sans-serif;
+}
+
 .sidebar {
-    background-color: rgb(252, 236, 192);
+    background-color: #ffedd5;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
 
 .content {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .projects {
-    border: solid black;
+    /* border: solid black; */
     grid-row: 1 / 3;
 }
 
 .announcements {
-    border: solid coral;
+    /* border: solid coral; */
 }
 
 .trending {
-    border: solid brown;
+    /* border: solid brown; */
 }
 
