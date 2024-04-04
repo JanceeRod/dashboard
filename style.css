@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.header { 
+    background-color: antiquewhite;
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.content {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    border: solid black;
+    grid-row: 1 / 3;
+}
+
+.announcements {
+    border: solid coral;
+}
+
+.trending {
+    border: solid brown;
+}
+
