@@ -91,7 +91,7 @@ input {
 }
 
 .bottom button {
-    background-color: #fed7aa;
+    background-color: #7EA172;
     height: 40px;
     width: 100px;
     border-radius: 30px;
@@ -99,12 +99,58 @@ input {
     font-weight: bold;
     font-size: medium;
     font-family: "DM Sans", sans-serif;
+    color: #273822;
 }
 
 .sidebar {
-    background-color: #ffedd5;
+    background-color: #7EA172;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    padding: 35px 30px 30px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar-title span {
+    font-size: 40px;
+    margin-right: 10px;
+    color: #043320;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #043320;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.nav li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav li a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #043320;
+    font-weight: bold;
+}
+
+.nav li span {
+    font-size: 30px;
 }
 
 .content {
