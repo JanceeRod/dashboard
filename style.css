@@ -180,7 +180,7 @@ input {
     grid-row: 1 / 3;
 }
 
-.projects h3 {
+.projects h3, .announcements h3, .trending h3 {
     margin-bottom: 20px;
     font-size: x-large;
 }
@@ -229,11 +229,41 @@ input {
 }
 
 .announcements {
-    border: solid coral;
-    display: grid; 
-    grid-auto-rows: auto;
+    /* border: solid coral; */
+}
+
+.announcements .card, .trending .card {
+    border: solid 1px#dfe6dd;
+    background-color: #fff9ef;
+    box-shadow: 4px 4px 4px 2px rgba(219, 219, 219, 0.473);
+    border-radius: 10px;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; Clip overflowing content */
+}
+
+.announcements h5 {
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+.announcements p {
+    font-size: small;
+}
+
+.announcements ul {
+    list-style-type: none;
 }
 
 .trending {
     border: solid brown;
+}
+
+
+
+.separator {
+    border-top: 1px solid #dfe6dd;
+    margin: 20px 0; /* Adjust spacing as needed */
 }
