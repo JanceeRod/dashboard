@@ -188,6 +188,7 @@ input {
     display: flex;
     flex-wrap: wrap; /* Allow content to wrap */
     overflow: hidden; /* Clip overflowing content */
+    transition: box-shadow 0.1s, transform 0.1s; /* Added transition for transform */
 }
 
 .projects .card {
@@ -195,6 +196,12 @@ input {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+}
+
+.projects .cards:hover {
+    box-shadow: 6px 6px 8px rgba(178, 199, 183, 0.575); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Raise the card a little bit on hover */
 }
 
 .card h5 {
