@@ -179,10 +179,21 @@ input {
 }
 
 .projects .cards {
-    border: solid red;
+    border: solid rgb(0, 225, 255);
     border-radius: 10px;
     height: 200px;
     padding: 30px;
+    display: flex;
+}
+
+.projects .card {
+    border: solid rgb(9, 255, 0);
+    gap: 10px;
+}
+
+.card .actions {
+    border: solid red;
+
 }
 
 .announcements {
