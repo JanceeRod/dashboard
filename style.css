@@ -228,10 +228,6 @@ input {
     margin-top: auto;
 }
 
-.announcements {
-    /* border: solid coral; */
-}
-
 .announcements .card, .trending .card {
     border: solid 1px#dfe6dd;
     background-color: #fff9ef;
